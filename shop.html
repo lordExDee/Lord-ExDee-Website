@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><title>Lord ExDee — Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navBar fadeIn">
+    <div class="logo">Lord ExDee</div>
+    <nav><a href="index.html">Home</a><a href="beats.html">Beats</a><a href="drumkits.html">Drumkits</a><a href="mixing.html">Mixing</a><a href="shop.html" class="active">Shop</a><a href="login.html" class="loginBtn">Login</a></nav>
+  </header>
+  <section class="pageHeader fadeUp">
+    <h1>Store</h1>
+    <div class="shopContainer">
+      <div class="shopItem">
+        <h3>Beat License</h3>
+        <span class="price">$30</span>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="business" value="your-email@example.com">
+          <input type="hidden" name="item_name" value="Beat License">
+          <input type="hidden" name="amount" value="300">
+          <input type="hidden" name="currency_code" value="ZAR">
+          <button type="submit" class="buyBtn">Pay via PayPal</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

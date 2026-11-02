@@ -1,0 +1,41 @@
+/* styles.css — BLACK & PURPLE THEME */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+html, body { width: 100%; height: 100%; background-color: #050505; color: #ffffff; scroll-behavior: smooth; }
+
+/* NAVBAR */
+.navBar { width: 100%; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; left: 0; background: rgba(5,5,5,0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #1a1a1a; }
+.logo { font-size: 32px; font-weight: 700; color: #9d00ff; text-shadow: 0 0 10px rgba(157,0,255,0.5); }
+nav a { margin-left: 20px; text-decoration: none; color: #ffffff; font-size: 14px; font-weight: 500; transition: 0.3s ease; }
+nav a:hover, nav a.active { color: #9d00ff; }
+.loginBtn { border: 1px solid #9d00ff; padding: 8px 18px; border-radius: 8px; color: #9d00ff !important; }
+.loginBtn:hover { background: #9d00ff; color: #fff !important; }
+
+/* HERO */
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 120px 20px 40px; background: radial-gradient(circle at top, #1a0033 0%, #050505 80%); }
+.hero h1 { font-size: 60px; margin-bottom: 15px; letter-spacing: -2px; }
+.hero p { max-width: 600px; font-size: 18px; opacity: 0.8; margin-bottom: 30px; }
+.btn, .btn2 { padding: 14px 28px; border-radius: 12px; font-size: 16px; text-decoration: none; margin: 8px; transition: 0.3s ease; display: inline-block; }
+.btn { background: #9d00ff; color: #fff; box-shadow: 0 5px 15px rgba(157,0,255,0.4); }
+.btn2 { border: 1px solid #9d00ff; color: #9d00ff; }
+
+/* CARDS */
+.beatsContainer, .kitsContainer, .mixingContainer, .shopContainer { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px; max-width: 1300px; margin: 0 auto; }
+.beatCard, .kitCard, .mixCard, .shopItem { background: #111; border: 1px solid #222; border-radius: 20px; padding: 30px; transition: 0.4s ease; }
+.beatCard:hover { transform: translateY(-10px); border-color: #9d00ff; box-shadow: 0 10px 30px rgba(157,0,255,0.2); }
+.price { display: block; font-size: 24px; font-weight: 700; margin: 15px 0; color: #9d00ff; }
+.buyBtn { width: 100%; padding: 14px; background: #9d00ff; border: none; border-radius: 12px; color: #fff; font-size: 16px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+.buyBtn:hover { background: #b033ff; }
+
+/* TUTORIAL VIDEO PLACEHOLDER */
+.videoThumb { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; color: #9d00ff; border: 1px dashed #333; font-size: 12px; }
+
+/* FOOTER */
+footer { padding: 60px 20px; text-align: center; border-top: 1px solid #1a1a1a; margin-top: 50px; }
+.socials a { color: #9d00ff; text-decoration: none; margin: 0 15px; font-size: 18px; transition: 0.3s; }
+.socials a:hover { color: #fff; text-shadow: 0 0 10px #9d00ff; }
+
+/* ANIMATIONS */
+.fadeIn { animation: fadeIn 0.8s ease forwards; }
+.fadeUp { animation: fadeUp 0.8s ease forwards; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
